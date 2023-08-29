@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:id="@+id/recyclerView"
+    android:elevation="50dp"
+    android:background="@drawable/borderforcard"
+    >
+
+    <TextView
+        android:id="@+id/dishname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dish Name"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/dishimage"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        app:srcCompat="@drawable/dis"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+       >
+
+        <ImageView
+            android:id="@+id/likesimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="likes"
+            android:gravity="center"
+
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

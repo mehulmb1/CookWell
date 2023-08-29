@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/recyclerView"
+    android:elevation="50dp"
+    android:background="@drawable/borderforcard"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dishname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+
+            android:text="Dish Name"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:text="Dish Name"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/savebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/save" />
+
+
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/dishimage"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        app:srcCompat="@drawable/dis"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+       >
+
+        <ImageView
+            android:id="@+id/likesimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+        <ImageView
+            android:id="@+id/timeimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/clock" />
+
+        <ImageView
+            android:id="@+id/vegornotimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vegicon" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="likes"
+            android:textColor="@color/black"
+
+            android:gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="likes"
+            android:textColor="@color/black"
+
+            android:gravity="center"
+
+
+            />
+
+        <TextView
+            android:id="@+id/vegornot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="likes"
+            android:textColor="@color/black"
+
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
